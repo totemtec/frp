@@ -1,0 +1,10 @@
+<service>
+  <id>frpc</id>
+  <name>frpc</name>
+  <description>This service runs frpc powered by WinSW.</description>
+  <executable>D:\Programs\frp_0.54.0\frpc.exe</executable>
+  <arguments>-c "D:\Programs\frp_0.54.0\frpc.toml"</arguments>
+  <onfailure action="restart" delay="30 sec"/>
+  <onfailure action="restart" delay="300 sec"/>
+  <log mode="roll" />
+</service>
